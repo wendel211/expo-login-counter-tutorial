@@ -1,143 +1,112 @@
-# 📱 Expo Login Counter Tutorial
+# Minicurso React Native – Criando seu Primeiro App com Expo
 
-Bem-vindo(a) ao seu **primeiro aplicativo com React Native e Expo!** 🎉  
-Este projeto foi criado para te mostrar, de forma simples e prática, **como construir um app do zero**, mesmo que você **nunca tenha programado antes**.
+Este projeto foi desenvolvido para o minicurso de React Native e Expo, ministrado por mim no **Instituto Federal da Bahia (IFBA) – Campus Feira de Santana**. O objetivo é ensinar, de forma simples e prática, como criar o primeiro aplicativo mobile usando React Native e Expo, mesmo para quem nunca programou antes.
 
----
+## Sobre o projeto
 
-## 🧠 O que vamos construir
+Durante o minicurso, será construído um aplicativo com duas telas principais:
 
-Um **aplicativo com duas telas**:
+1. **Tela de Login** – permite inserir nome de usuário e senha.
+2. **Tela do Contador** – exibe um contador que pode ser incrementado ou zerado.
 
-1. **Tela de Login** — onde você digita usuário e senha  
-2. **Tela do Contador** — onde você pode **somar +1** ou **zerar o valor**  
+O projeto tem foco educativo e foi planejado para introduzir os conceitos básicos do desenvolvimento mobile com React Native.
 
-Tudo isso usando apenas alguns **comandos simples** e um pouquinho de curiosidade! 💡
+## Pré-requisitos
 
----
+Antes de começar, é importante ter o ambiente preparado:
 
-## 🚀 Antes de começar
+**No computador:**
+* Node.js instalado (versão 18 ou superior)
+* Editor de código, como VS Code
+* Conexão com a internet
 
-Você precisa ter algumas coisinhas prontas no seu computador e celular:
+**No celular:**
+* Instale o aplicativo **Expo Go**
+   * [Baixar na Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent)
+   * [Baixar na App Store](https://apps.apple.com/app/expo-go/id982107779)
 
-### 🧰 No computador:
-- [Node.js](https://nodejs.org/) instalado (versão 18 ou superior)
-- Um editor de código, como [VS Code](https://code.visualstudio.com/)
-- Conexão com a internet
+## Como executar o projeto
 
-### 📱 No celular:
-- Instale o app **Expo Go** (é gratuito!)
-  - [Baixar na Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent)
-  - [Baixar na App Store](https://apps.apple.com/app/expo-go/id982107779)
-
-Pronto! Agora você já pode criar e rodar o app! 🎯
-
----
-
-## 🧩 Passo a passo para rodar o projeto
-
-### 1️⃣ Baixar o projeto
-Abra o terminal e digite:
+1. **Clonar o repositório:**
 ```bash
 git clone https://github.com/seuusuario/expo-login-counter-tutorial.git
 ```
 
-### 2️⃣ Entrar na pasta do projeto
+2. **Entrar na pasta do projeto:**
 ```bash
 cd expo-login-counter-tutorial
 ```
 
-### 3️⃣ Instalar as dependências
-Esses são os "pacotes" que o app precisa para funcionar.
+3. **Instalar as dependências:**
 ```bash
 npm install
 ```
 
-### 4️⃣ Iniciar o projeto
-Agora vamos rodar o app:
+4. **Iniciar o aplicativo:**
 ```bash
 npx expo start
 ```
 
-Quando aparecer um QR Code no terminal ou na aba do navegador:
+5. **Executar no celular:**
+   * Abra o app **Expo Go**
+   * Escaneie o QR Code exibido no terminal ou navegador
 
-- Aponte a câmera do seu celular (com o app Expo Go aberto)
-- Espere alguns segundos… e pronto! 🎉
-
-Seu primeiro app React Native estará funcionando no seu celular! 🚀
-
----
-
-## 🧱 Estrutura do projeto
+## Estrutura do projeto
 ```
 expo-login-counter-tutorial/
- ├── App.js                # Onde está a navegação entre as telas
+ ├── App.js                # Arquivo principal com a navegação
  ├── screens/
- │    ├── LoginScreen.js   # Tela de login com usuário e senha
- │    └── CounterScreen.js # Tela do contador com botões
+ │    ├── LoginScreen.js   # Tela de login
+ │    └── CounterScreen.js # Tela do contador
  └── ...
 ```
 
----
+## Detalhes das telas
 
-## 🧑‍💻 Entendendo as telas
+### Tela de Login
+* Permite digitar usuário e senha.
+* Se as credenciais estiverem corretas, o usuário é direcionado para a tela principal.
+* Caso contrário, é exibida uma mensagem de erro.
 
-### 🔐 1. Tela de Login
-**Objetivo:** permitir que o usuário digite um nome e senha e acesse a tela principal.
-
-**Usuário e senha corretos:**
+**Credenciais padrão:**
 ```
 Usuário: admin
 Senha: 123
 ```
 
-- ✅ Se os dados estiverem certos → você será levado para a tela do contador
-- ❌ Se estiver errado → o app mostra um alerta com a mensagem "Usuário ou senha incorretos"
+### Tela do Contador
+* Mostra um número inicial igual a 0.
+* O botão **"Somar +1"** aumenta o valor do contador.
+* O botão **"Zerar"** redefine o valor para 0.
 
-### 🔢 2. Tela do Contador
-**Objetivo:** praticar o uso de estados e eventos no React Native.
+Essas ações servem para demonstrar o uso de estados e eventos no React Native.
 
-- O contador começa em **0**
-- Ao clicar em **"Somar +1"**, o número aumenta
-- Ao clicar em **"Zerar"**, o contador volta para 0
+## Conteúdos abordados no minicurso
 
-Isso mostra como o app reage às suas ações — e é daí que vem o nome **React!** ⚛️
+Durante o desenvolvimento do projeto, são explicados os seguintes conceitos:
 
----
+* O que é o Expo e como ele facilita o desenvolvimento mobile
+* Estrutura básica de um aplicativo React Native
+* Criação e estilização de componentes
+* Uso do hook `useState` para controle de estado
+* Navegação entre telas com o React Navigation
 
-## 🪄 O que você vai aprender
+## Desafios sugeridos
 
-Durante o uso e a explicação deste projeto, você vai entender:
+Após o minicurso, o participante poderá praticar com os seguintes desafios:
 
-✅ O que é o Expo e por que ele facilita o desenvolvimento mobile  
-✅ Como criar e exibir componentes na tela  
-✅ O que é o hook `useState` e como ele guarda valores  
-✅ Como navegar entre telas com o React Navigation  
-✅ Como aplicar estilos visuais usando o `StyleSheet`
+* Adicionar um botão **"Diminuir -1"**
+* Alterar as cores e o estilo da aplicação
+* Mostrar uma mensagem quando o contador atingir determinado valor
+* Implementar um botão **"Sair"** que retorna à tela de login
 
----
+## Autor
 
-## 🎨 Desafios extras (para quem quiser ir além)
+**Wendel Muniz**  
+Minicurso desenvolvido como atividade prática para introdução ao React Native.  
+**Instituto Federal da Bahia – Campus Feira de Santana**  
+Curso: Bacharelado em Sistemas de Informação
 
-Depois de rodar o app e entender o básico, tente praticar com esses mini-desafios:
+## Licença
 
-- ➕ Adicione um botão **"Diminuir -1"**
-- 🎨 Mude a **cor do fundo** da tela
-- 🪞 Mostre uma **mensagem especial** quando o contador chegar em 10
-- 🕹️ Crie um botão para **"Sair"** e voltar para a tela de login
-
-Esses exercícios ajudam a fixar o aprendizado e te deixam mais confiante como dev! 💪
-
----
-## ❤️ Criado por
-
-Desenvolvido com 💚 por **Wendel Muniz**  
-Pensado especialmente para quem está começando no mundo do desenvolvimento mobile.
-
-> _"Todo grande programador começou clicando em um botão que finalmente funcionou."_ 👾
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Sinta-se livre para usar, modificar e compartilhar!
+Este projeto está sob a licença MIT. Você pode utilizá-lo, modificar e redistribuir livremente para fins de aprendizado.
